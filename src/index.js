@@ -1,38 +1,36 @@
 import { pageLoad } from './home';
-import Backgroung from './restaurant.jpg';
-// import { makeContactPage } from './contact';
+import { contactLoad } from './contact';
+import ResImg from './restaurant.jpg';
 
 const div = document.getElementById('content');
 
-function init() {
+function handleClick(e) {
+  const bttn = e.target;
 
-  return pageLoad();
+  // wipes out the current content
+  div.innerHTML = "";
+
+  // runs the tab module to populate it again 
+  if(bttn.textContent === "Contact") contactLoad(div);
+  
+  // makeMenuPage();
+  
 }
 
-div.appendChild(init());
+function loadListeners() {
+  const menuBttn = document.querySelector('.menu');
+  const contactBttn = document.querySelector('.contact');
 
-// function handleClick(cont) {
-//   // wipes out the current content
-//   cont.innerHTML = "";
-  
-//   // runs the tab module to populate it again 
-//   makeContactPage(cont);
-// }
+  menuBttn.addEventListener('click', handleClick);
+  contactBttn.addEventListener('click', handleClick);
+}
 
-// function switchTab() {
-//   // Select the tab buttons
-//   const menuBttn = document.querySelector('.menu');
-//   const contactBttn = document.querySelector('.contact');
-//   const container = document.getElementById('content');
+function init() {
 
-//   // add click listeners for that buttons
-//   menuBttn.addEventListener('click', () => handleClick(container));
-//   contactBttn.addEventListener('click', () => handleClick(container));
-// }
+  const home = pageLoad(div, ResImg);
+  document.body.appendChild(home);
 
+  loadListeners();
+}
 
-
-// switchTab();
-
-
-
+init();

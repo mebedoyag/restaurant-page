@@ -1,4 +1,4 @@
-function makeContactPage(container) {
+function contactLoad(container) {
   // creates a div element
   const div = document.createElement('div');
 
@@ -40,4 +40,4 @@ function makeContactPage(container) {
   container.appendChild(div);
 }
 
-export { makeContactPage };
+export { contactLoad };
