@@ -1,20 +1,21 @@
 import { pageLoad } from './home';
 import { contactLoad } from './contact';
+import { menuLoad } from './menu';
 import ResImg from './restaurant.jpg';
+import FoodImg from './food.jpg'
 
 const div = document.getElementById('content');
 
 function handleClick(e) {
   const bttn = e.target;
 
-  // wipes out the current content
   div.innerHTML = "";
 
-  // runs the tab module to populate it again 
-  if(bttn.textContent === "Contact") contactLoad(div);
-  
-  // makeMenuPage();
-  
+  if(bttn.textContent === "Contact") {
+    contactLoad(div); 
+  } else {
+    menuLoad(div, FoodImg);
+  }
 }
 
 function loadListeners() {
