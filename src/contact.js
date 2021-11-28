@@ -4,10 +4,11 @@ function contactLoad(container) {
 
   // adds the content
   div.innerHTML = `
-    <header>Hablanos</header>
     <main>
+    <div class="wrapper">
       <h1>Para realizar tu pedido, conocer el estado de tu domicilio o hacer preguntas, quejas o sugerencias</h1>
-      <div>
+    </div>
+    <div class="phones">
       <p>En Bogota al</p>
       <p>60 + 1 + 6543300</p>
       <p>En Medellin al</p>
@@ -24,17 +25,17 @@ function contactLoad(container) {
           <li>tikto</li>
         </ul>
       </p>
-      </div>
+    </div>
       <footer>
-        <div>Mrs Burger &copy;</div>
-        <div>Made with &hearts; by Mike</div>
-        <div>Terms and contitions</div>
+        <div><a href="#">Mrs Burger &copy;</a></div>
+        <div><a href="#">Made with &hearts; by Mike</a></div>
+        <div><a href="#">Terms and contitions</a></div>
       </footer>
     </main>
   `;
 
   // styles to that element
-
+  div.classList.add('content-inner');
 
   // appends it to the DOM
   container.appendChild(div);

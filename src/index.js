@@ -2,7 +2,8 @@ import { pageLoad } from './home';
 import { contactLoad } from './contact';
 import { menuLoad } from './menu';
 import ResImg from './restaurant.jpg';
-import FoodImg from './food.jpg'
+import FoodImg from './food.jpg';
+import './style.css';
 
 const div = document.getElementById('content');
 
@@ -28,9 +29,7 @@ function loadListeners() {
 
 function init() {
 
-  const home = pageLoad(div, ResImg);
-  document.body.appendChild(home);
-
+  pageLoad(div, ResImg);
   loadListeners();
 }
 
