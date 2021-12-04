@@ -4,25 +4,29 @@ function menuLoad(container, url) {
 
   // adds the content
   div.innerHTML = `
-    <h1>Our delicious menu</h1>
+  <main>
+  <div class="wrapper">
+  <h1>Our delicious menu</h1>
+  </div>
     <div>
-      <div>
+      <div class="food-img">
         <img src="${url}" alt="delicous plate"/>
         <p>Try our house plate, you will not regret</p>
       </div>
-      <div>
+      <div class="food-img">
         <img src="${url}" alt="delicous plate"/>
         <p>Try our house plate, you will not regret</p>
       </div>
-      <div>
+      <div class="food-img">
         <img src="${url}" alt="delicous plate"/>
         <p>Try our house plate, you will not regret</p>
       </div>
-      <div>
+      <div class="food-img">
         <img src="${url}" alt="delicous plate"/>
         <p>Try our house plate, you will not regret</p>
       </div>
     </div>
+  </main>
   `;
 
   // styles to that element

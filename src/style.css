@@ -57,7 +57,8 @@ body {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
+  text-shadow: none;
 }
 
 .wrapper {
@@ -68,12 +69,23 @@ h1 {
 }
 
 img {
-  width: 80%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+figure {
+  margin: 0 auto;
+
+}
+
+.main-img {
+  width: 100%;
 }
 
 p {
   margin-top: 2rem;
   line-height: 1.1;
+  font-size: 1.2rem;
 }
 
 .phones p {
@@ -81,6 +93,35 @@ p {
 }
 
 footer {
+  margin-top: 2rem;
   display: flex;
   justify-content: space-between;
+}
+
+button {
+  padding: 1rem;
+  border: none;
+  font-size: 20px;
+  border-radius: 3px;
+}
+
+.p-wrapper {
+  padding: 2rem;
+  background-color: lightgoldenrodyellow;
+  width: 50%;
+  text-align: center;
+  margin: 1rem auto;
+  border-radius: 5px;
+}
+
+.p-wrapper p {
+  font-size: 2rem;
+}
+
+.wrapper h1 {
+  font-size: 3rem;
+}
+
+.food-img {
+  padding: 200px;
 }

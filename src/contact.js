@@ -9,22 +9,20 @@ function contactLoad(container) {
       <h1>Para realizar tu pedido, conocer el estado de tu domicilio o hacer preguntas, quejas o sugerencias</h1>
     </div>
     <div class="phones">
-      <p>En Bogota al</p>
-      <p>60 + 1 + 6543300</p>
-      <p>En Medellin al</p>
-      <p>60 + 4 + 6543369</p>
-      <p>En todo el pais</p>
-      <p>333 622 0000</p>
+    <div class="p-wrapper">
+    <p>En Bogota al</p>
+    <p>60 + 1 + 6543300</p>
+    </div>
+    <div class="p-wrapper">
+    <p>En Medellin al</p>
+    <p>60 + 4 + 6543369</p>
+    </div>
+    <div class="p-wrapper">
+    <p>En todo el pais</p>
+    <p>333 622 0000</p>
+    </div>
       <p>También puedes contactarnos por redes sociales</p>
-      <p>
-        <ul>
-          <li>face</li>
-          <li>insta</li>
-          <li>twitter</li>
-          <li>youtu</li>
-          <li>tikto</li>
-        </ul>
-      </p>
+      
     </div>
       <footer>
         <div><a href="#">Mrs Burger &copy;</a></div>
